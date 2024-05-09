@@ -1,0 +1,9 @@
+<h4>Please input your Arabic number to be parsed!</h4>
+
+<input [formControl]="romanInput">
+
+<h4>This is your Arabic number parsed to Roman format!</h4>
+
+<ng-container *ngIf="parsedValue$ | async as parsedValue">
+{{parsedValue}}
+</ng-container>
